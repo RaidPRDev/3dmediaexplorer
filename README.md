@@ -2,15 +2,19 @@
 Backbone component that runs 3D scenes with hotspots. Using three.js as 3D engine.
 
 ## Purpose
-I created this component to have the ability to load FBX 3D models and have hotspots assigned to them.
 
-The hotspots would be created as Dummy objects in the 3D scene. So its up to the 3D designer to add the Dummy objects.
+I created this component to have the ability to load FBX 3D models and have hotspots assigned to them. The hotspots would be created as Dummy objects in the 3D scene. So its up to the 3D designer to add the Dummy objects.
 
 ## Requirements
-This component requires Backbone and the Adapt framework.  Please install Adapt and copy to the components folder.
+
+This component requires Backbone and the Adapt framework. The component comes bundled with the ThreeJS version 112.
 
 * [Adapt](https://github.com/adaptlearning/adapt_framework)
-* [ThreeJS](https://threejs.org/)
+* [ThreeJS](https://threejs.org/) 
+
+## Installation
+
+Copy to the framework components folder. See example.json for using the component.
 
 ## Attributes
 
