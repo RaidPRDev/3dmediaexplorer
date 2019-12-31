@@ -1,5 +1,5 @@
 # 3dmediaexplorer
-Backbone component that runs 3D scenes with hotspots. Using three.js as 3D engine.
+Backbone component that runs 3D(FBX) scenes with hotspots. Using [three.js](https://threejs.org/) as its core 3D engine.
 
 ## Purpose
 
