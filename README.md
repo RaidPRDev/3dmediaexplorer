@@ -23,6 +23,8 @@ This component requires Backbone and the Adapt framework.  Please install Adapt 
 
 **mobileInstruction** (string): This is optional instruction text that will be shown when viewed on mobile. It may be used to guide the learner’s interaction with the component.   
 
+**debug** (boolean): Enable debug mode, will show logging information and viewport stats.
+
 **coverImage** (string): This is optional URL property to have the component load a splash screen at startup.
 
 **texturePath** (string): This is a required URL property to set the path of the textures linked to the 3D scenes.  The component will then preload the textures.
@@ -51,4 +53,10 @@ This component requires Backbone and the Adapt framework.  Please install Adapt 
 
 >>**image** (object): The image that appears in the popup. 
 
-
+----------------------------
+**Version number:**  4.0.0   <a href="https://community.adaptlearning.org/" target="_blank"><img src="https://github.com/adaptlearning/documentation/blob/master/04_wiki_assets/plug-ins/images/adapt-logo-mrgn-lft.jpg" alt="adapt learning logo" align="right"></a> 
+**Framework versions:** 4+
+**Author / maintainer:** Adapt Core Team with [contributors](https://github.com/adaptlearning/adapt-contrib-narrative/graphs/contributors)    
+**Accessibility support:** WAI AA   
+**RTL support:** no  
+**Cross-platform coverage:** Chrome, Chrome for Android, Firefox (ESR + latest version), Edge, IE11, IE Mobile 11, Safari 11+12 for macOS+iOS, Opera
