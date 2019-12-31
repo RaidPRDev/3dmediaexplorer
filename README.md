@@ -9,6 +9,9 @@ The hotspots would be created as Dummy objects in the 3D scene. So its up to the
 ## Requirements
 This component requires Backbone and the Adapt framework.  Please install Adapt and copy to the components folder.
 
+* [Adapt](https://github.com/adaptlearning/adapt_framework)
+* [ThreeJS](https://threejs.org/)
+
 ## Attributes
 
 [**core model attributes**](https://github.com/adaptlearning/adapt_framework/wiki/Core-model-attributes): These are inherited by every Adapt component. [Read more](https://github.com/adaptlearning/adapt_framework/wiki/Core-model-attributes).
