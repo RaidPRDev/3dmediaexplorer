@@ -3,8 +3,7 @@
   "version": "3.0.0",
   "homepage": "",
   "authors": [
-    "Jose Campos <jose.campos@sweetrush.com>",
-    "Rafael Emmanuelli <rafael.emmanuelli@sweetrush.com>"
+    "Rafael Emmanuelli <fania@raidpr.com>"
   ],
   "description": "Media Explorer that runs 3D with hotspots and video.  Using three.js as 3D engine.",
   "main": "/js/adapt-sr-3dMediaExplorer.js",
