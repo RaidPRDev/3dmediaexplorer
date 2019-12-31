@@ -1,0 +1,34 @@
+<div class="mediaexplorer3D-inner component-inner" role="region" aria-label="{{_globals._components._mediaexplorer3D.ariaRegion}}">
+     {{> component this}}
+     <div class="mediaexplorer3D-widget component-widget">
+          <div class="mediaexplorer3D-container">
+
+               <!-- 3D Media Cover / Play Button -->
+               <button class="media-control-play" 
+                    {{#if coverImage}}style="background-image: url('{{coverImage}}')"{{/if}}
+                    title="Start" aria-label="Play">
+                    <span class="media-control-icon"></span>
+               </button>
+          </div>
+
+          <div class="mediaexplorer3D-controls">
+          	<button class="media-control media-control-previous" title="Previous" aria-label="{{_globals._accessibility._ariaLabels.previous}}">
+                    <span class="media-control-icon"></span>
+               </button>
+
+               <button class="media-control media-control-reset" title="Reset" aria-label="Reset">
+                    <span class="media-control-icon"></span>
+               </button>
+               <button class="media-control media-control-zoom-out" title="Zoom Out" aria-label="Zoom Out">
+                    <span class="media-control-icon"></span>
+               </button>
+               <button class="media-control media-control-zoom-in" title="Zoom In" aria-label="Zoom In">
+                    <span class="media-control-icon"></span>
+               </button>
+
+          	<button class="media-control media-control-next" title="Next" aria-label="{{_globals._accessibility._ariaLabels.next}}" >
+                    <span class="media-control-icon"></span>
+               </button>
+          </div>
+     </div>
+</div>

@@ -1,0 +1,239 @@
+{
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"id": "http://jsonschema.net",
+	"$ref": "http://localhost/plugins/content/component/model.schema",
+	"globals": {
+		"ariaRegion": {
+			"type": "string",
+			"required": true,
+			"default": "Below is a component which allows you to view multiple videos and 3D assets in one slide show. Use the navigation arrows to swith.  You can also set videos to play automatically. Note once videos are complete, it will automatically move to the next item.",
+			"inputType": "Text",
+			"validators": [],
+			"translatable": true
+		}
+	},
+	"properties": {
+		"_supportedLayout": {
+			"type": "string",
+			"required": true,
+			"enum": ["full-width", "half-width", "both"],
+			"default": "full-width",
+			"editorOnly": true
+		},
+		"instruction": {
+			"type": "string",
+			"required": false,
+			"default": "",
+			"inputType": "Text",
+			"validators": [],
+			"help": "This is the instruction text",
+			"translatable": true
+		},
+		"_items": {
+			"type": "array",
+			"required": false,
+			"title": "Media Items",
+			"_items": {
+				"type": "object",
+				"required": false,
+				"properties": {
+					"type": {
+						"type": "string",
+						"required": false,
+						"default": "",
+						"inputType": "Text",
+						"validators": [],
+						"help": "Type of media item: hotspot(3D FBX) or media(MP4, Youtube, etc...)"
+					},
+					"media": {
+						"type": "object",
+						"required": false,
+						"properties": {
+							"small": {
+								"type": "string",
+								"required": false,
+								"default": "",
+								"inputType": "Text",
+								"validators": [],
+								"help": "Small media video is for mobile devices"
+							},
+							"large": {
+								"type": "string",
+								"required": false,
+								"default": "",
+								"inputType": "Text",
+								"validators": [],
+								"help": "Large media video is for desktop"
+							}
+						}
+					},
+					"hotspots": {
+						"type": "object",
+						"required": false,
+						"properties": {
+							"model": {
+								"type": "string",
+								"required": false,
+								"default": "",
+								"inputType": "Text",
+								"validators": [],
+								"help": "FBX Binary file"
+							},
+							"isFadeInLights": {
+								"type": "boolean",
+								"required": false,
+								"default": false,
+								"inputType": "Checkbox",
+								"validators": [],
+								"help": "This sets up lighting to start a 0 intensity, it will then fade in to the value set in the model."
+							},
+							"fadeLightTime": {
+								"type": "number",
+								"required": false,
+								"default": 0.5,
+								"inputType": "Number",
+								"validators": [],
+								"help": "This sets up lighting to start a 0 intensity, it will then fade in to the value set in the model."
+							},
+							"isAnimateCameraReset": {
+								"type": "boolean",
+								"required": false,
+								"default": false,
+								"inputType": "Checkbox",
+								"validators": [],
+								"help": "At camera reset, do we animate/tween it back."
+							},
+							"cameraResetTime": {
+								"type": "boolean",
+								"required": false,
+								"default": false,
+								"inputType": "Checkbox",
+								"validators": [],
+								"help": "If isAnimateCameraReset is true, the duration of the animation"
+							},
+							"zoomLength": {
+								"type": "number",
+								"required": false,
+								"default": 0,
+								"inputType": "Number",
+								"validators": [],
+								"help": "The zoom amount added when using the zoom controls"
+							},
+							"ambientLight": {
+								"type": "number",
+								"required": false,
+								"default": 0.85,
+								"inputType": "Number",
+								"validators": [],
+								"help": "If no lights are added in the FBX mode, this will create an ambient light and set its intensity"
+							},
+							"directLight": {
+								"type": "number",
+								"required": false,
+								"default": 0.95,
+								"inputType": "Number",
+								"validators": [],
+								"help": "If no lights are added in the FBX mode, this will create a direct light and set its intensity"
+							},
+							"reflectivity": {
+								"type": "number",
+								"required": false,
+								"default": 0.95,
+								"inputType": "Number",
+								"validators": [],
+								"help": "If no lights are added in the FBX mode, this will create a direct light and set its intensity"
+							},
+							"shininess": {
+								"type": "number",
+								"required": false,
+								"default": 0.95,
+								"inputType": "Number",
+								"validators": [],
+								"help": "If no lights are added in the FBX mode, this will create a direct light and set its intensity"
+							},
+							"specular": {
+								"type": "string",
+								"required": false,
+								"default": "0d0d0d",
+								"inputType": "Text",
+								"validators": [],
+								"help": "Hex value of the specular map on the FBX material"
+							},
+							"textures": {
+								"type": "object",
+								"required": false,
+								"properties": {
+
+								},
+								"help": "Name of the texture, Important! needs to match the FBX mesh name"
+							},
+							"hotspots": {
+								"type": "array",
+								"required": false,
+								"title": "Hotspot items",
+								"items": {
+									"type": "object",
+									"required": false,
+									"properties": {
+										"title": {
+											"type": "string",
+											"required": false,
+											"default": "",
+											"inputType": "Text",
+											"validators": [],
+											"help": "Title text in hotspot popup"
+										},
+										"body": {
+											"type": "string",
+											"required": false,
+											"default": "",
+											"inputType": "Text",
+											"validators": [],
+											"help": "Body text in hotspot popup"
+										},
+										"image": {
+											"type": "string",
+											"required": false,
+											"default": "",
+											"inputType": "Text",
+											"validators": [],
+											"help": "Image used in hotspot popup"
+										}
+									}
+								}
+							}
+						}
+					},
+					"attribution": {
+						"type": "string",
+						"required": false,
+						"default": "",
+						"inputType": "Text",
+						"validators": [],
+						"help": "Text to be displayed as an attribution",
+						"translatable": true
+					}
+				}
+			}
+		},
+		"mobileBody": {
+			"type": "string",
+			"required": false,
+			"default": "",
+			"inputType": "TextArea",
+			"validators": [],
+			"help": "This body text is displayed on mobile devices when this component turns into a Narrative",
+			"translatable": true
+		},
+		"mobileInstruction": {
+			"type": "string",
+			"required": false,
+			"default": "",
+			"inputType": "TextArea",
+			"validators": [],
+			"help": "This instruction text is displayed on mobile devices when this component turns into a Narrative",
+			"translatable": true
+		}
+	}
+}

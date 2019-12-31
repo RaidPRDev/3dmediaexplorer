@@ -1,0 +1,120 @@
+.mediaexplorer3D-component 
+{
+	@mediacontrol-button-icon-size: 36px;
+	@mediacontrol-icon-size: 24px;
+	@mediacontrol-icon-color: #6d00ce;
+	@mediacontrol-icon-hover-color: #f77623;
+
+	@mediacontrol-icon-play-content: "\f0d9";
+	@mediacontrol-icon-prev-content: "\f0d9";
+	@mediacontrol-icon-next-content: "\f0da";
+	@mediacontrol-icon-reset-content: "\f0e2";
+	@mediacontrol-icon-zoomin-content: "\f010";
+	@mediacontrol-icon-zoomout-content: "\f00e";
+
+	.mediaexplorer3D-widget {
+		position: relative;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.mediaexplorer3D-container {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding-bottom: 56.25%;
+		background-color: grey;
+	}
+
+	.media-control-play {
+		position: absolute;
+		padding: 0;
+		border: none;
+		background: transparent;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+
+		.media-control-icon {
+			position: relative;
+			display: block;
+			width: 62px;
+			height: 62px;
+			margin: auto;
+
+			.media-control-icon:before {
+				content: @mediacontrol-icon-play-content;
+			}
+		}
+	}
+
+	.mediaexplorer3D-controls {
+
+		padding: 0 5px;
+		width: auto;
+		margin: 10px auto 0;
+		text-align: center;
+
+		button {
+			height: @mediacontrol-button-icon-size;
+			width: @mediacontrol-button-icon-size;
+			margin: 0px 10px 0 10px;
+			outline: none;
+			background-color: transparent !important;
+			background-size: contain !important;
+			background-repeat: no-repeat !important;
+			background-position: center !important;
+
+			.no-touch &:hover {
+				background-color: transparent;
+				.media-control-icon:before {
+					color: @mediacontrol-icon-hover-color;
+				}
+			}
+			.media-control-icon:before {
+				.fas;
+				.fa-fixed-width;
+				color: @mediacontrol-icon-color;
+				font-size: mediacontrol-icon-size;
+			}
+
+			&.disabled {
+				opacity: 0.4;
+				pointer-events: none;
+			}
+
+			&.media-control-previous {
+				.media-control-icon:before {
+					content: @mediacontrol-icon-prev-content;
+				}
+			}
+
+			&.media-control-reset {
+				.media-control-icon:before {
+					content: @mediacontrol-icon-reset-content;
+				}
+			}
+
+			&.media-control-zoom-out {
+				.media-control-icon:before {
+					content: @mediacontrol-icon-zoomout-content;
+				}
+			}
+
+			&.media-control-zoom-in {
+				.media-control-icon:before {
+					content: @mediacontrol-icon-zoomin-content;
+				}
+			}
+
+			&.media-control-next {
+				.media-control-icon:before {
+					content: @mediacontrol-icon-next-content;
+				}
+			}
+		}
+	}
+}

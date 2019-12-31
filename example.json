@@ -1,0 +1,109 @@
+// FBX export on Max 2017 - FBX Version 2014/2015
+// Include Camera, must have a Camera Target.  Free Camera not supported.
+// Both FBX Filename, Mesh, Material and texture need to be the same name.
+// Multi Map Materials supported.  But only 1 Texture supported per FBX.
+// FBX File Units, must be in Inches.  Anything else will give unpredictable results.
+// Set HotSpots scale to 150 units.  Make sure the Hotspots are not on the mesh, slight above it.
+
+{
+	{
+          "_id": "c-53",
+          "_parentId": "b-36",
+          "_type": "component",
+          "_component": "mediaexplorer3D",
+          "_classes": "",
+          "_layout": "full",
+          "_isResetOnRevisit": false,
+          "title": "3D Media Explorer",
+          "displayTitle": "3D Media Explorer",
+          "body": "This component will allow you to navigate and view video and 3D media.  The 3D portion allows you to include hotpots.",
+          "instruction": "Use the buttons in the bottom control bar to explore the headset. When you see a hotspot, select it to find out more info.",
+          "debug": false,
+          "isNaviationLocked": false,
+          "texturePath": "./course/en/3D/textures/",
+          "hotspotsTexture": "./assets/3D/hotspot.png",
+          "hotspotsSelectedTexture": "./assets/3D/hotspot_selected.png",
+          "_items":[
+          {
+               "type": "hotspots",
+               "model": "course/en/3D/HeadSet.fbx",
+               "texture": "HeadSet.jpg",
+               "background3d": "bg.jpg",
+               "backgroundColor": "#3a3a3a",
+               "ambientLight" : 1,
+               "ambientColor": "#444444",
+               "zoomStart": 1,
+               "zoomAmount": 10,
+               "_items": [
+                    {
+                         "image": "course/en/3D/popup/oculus_01.jpg",
+                         "title": "OCULUS",
+                         "body": "The headphones have also received attention and see a nice composition of material design. "
+                    },
+                    {
+                         "image": "course/en/3D/popup/oculus_02.jpg",
+                         "title": "OCULUS",
+                         "body": "While Oculus is light on CV1 info for now, new information about the headset’s specs are due soon."
+                    },
+                    {
+                         "image": "course/en/3D/popup/oculus_03.jpg",
+                         "title": "POWER SWITCH",
+                         "body": "A long switch on the bottom right of the headset seems an odd choice for a power switch"
+                    },
+                    {
+                         "image": "course/en/3D/popup/oculus_04.jpg",
+                         "title": "LENSES",
+                         "body": "Oculus has hybrid Fresnel lenses to keep the lenses thin and bend the light in a way that helps us to see clearly."
+                    },
+                    {
+                         "image": "course/en/3D/popup/oculus_05.jpg",
+                         "title": "TRIANGLE TRACKING",
+                         "body": "The use of Head-Related Transfer Function (HRTF) tech, combined with the Rift's head tracking to create a sense of true 3D audio spatialisation."
+                    }
+               ]
+          },
+          {
+               "type": "hotspots",
+               "model": "course/en/3D/HeadSet.fbx",
+               "texture": "HeadSet.jpg",
+               "background3d": "bg.jpg",
+               "backgroundColor": "#3a3a3a",
+               "ambientLight" : 1,
+               "ambientColor": "#444444",
+               "zoomStart": 1,
+               "zoomAmount": 20,
+               "_items": [
+                    {
+                         "image": "course/en/3D/popup/oculus_01.jpg",
+                         "title": "OCULUS",
+                         "body": "The headphones have also received attention and see a nice composition of material design. "
+                    },
+                    {
+                         "image": "course/en/3D/popup/oculus_02.jpg",
+                         "title": "OCULUS",
+                         "body": "While Oculus is light on CV1 info for now, new information about the headset’s specs are due soon."
+                    },
+                    {
+                         "image": "course/en/3D/popup/oculus_03.jpg",
+                         "title": "POWER SWITCH",
+                         "body": "A long switch on the bottom right of the headset seems an odd choice for a power switch"
+                    },
+                    {
+                         "image": "course/en/3D/popup/oculus_04.jpg",
+                         "title": "LENSES",
+                         "body": "Oculus has hybrid Fresnel lenses to keep the lenses thin and bend the light in a way that helps us to see clearly."
+                    },
+                    {
+                         "image": "course/en/3D/popup/oculus_05.jpg",
+                         "title": "TRIANGLE TRACKING",
+                         "body": "The use of Head-Related Transfer Function (HRTF) tech, combined with the Rift's head tracking to create a sense of true 3D audio spatialisation."
+                    }
+               ]
+          }],
+          "_pageLevelProgress": {
+               "_isEnabled": true,
+               "_isCompletionIndicatorEnabled": true
+          },
+          "_isOptional": false
+     }
+},
